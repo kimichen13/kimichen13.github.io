@@ -12,12 +12,12 @@ head:
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
         # Name of the web application (default to the site title)
-        name: 
+        name: Kimi's Space
         # The displayed name of the web application
         # when there is not enough space to display full name
         short_name: 
         # The start URL of the web application
-        start_url: 
+        start_url: https://kimi.qqviaja.com/
         # The default theme color for the application
         theme_color: 
         # A placeholder background color for the application page to display
@@ -61,9 +61,9 @@ head:
         # Twitter card type (twitter:card)
         twitter_card: 
         # Twitter ID (twitter:creator)
-        twitter_id: 
+        twitter_id: KimiCuBao
         # Twitter Site (twitter:site)
-        twitter_site: 
+        twitter_site: https://twitter.com/KimiCuBao
         # Google+ profile link (deprecated)
         google_plus: 
         # Facebook admin ID
@@ -114,20 +114,20 @@ navbar:
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/kimichen13
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
     links:
-        Creative Commons:
-            icon: fab fa-creative-commons
-            url: https://creativecommons.org/
-        Attribution 4.0 International:
-            icon: fab fa-creative-commons-by
-            url: https://creativecommons.org/licenses/by/4.0/
+        # Creative Commons:
+        #     icon: fab fa-creative-commons
+        #     url: https://creativecommons.org/
+        # Attribution 4.0 International:
+        #     icon: fab fa-creative-commons-by
+        #     url: https://creativecommons.org/licenses/by/4.0/
         Download on GitHub:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/kimichen13/kimichen13.github.io
 # Article related configurations
 article:
     # Code highlight settings
@@ -147,13 +147,13 @@ article:
     licenses:
         Creative Commons:
             icon: fab fa-creative-commons
-            url: https://creativecommons.org/
-        Attribution:
-            icon: fab fa-creative-commons-by
-            url: https://creativecommons.org/licenses/by/4.0/
-        Noncommercial:
-            icon: fab fa-creative-commons-nc
-            url: https://creativecommons.org/licenses/by-nc/4.0/
+            url: https://github.com/kimichen13/kimichen13.github.io/blob/main/LICENSE
+        # Attribution:
+        #     icon: fab fa-creative-commons-by
+        #     url: https://creativecommons.org/licenses/by/4.0/
+        # Noncommercial:
+        #     icon: fab fa-creative-commons-nc
+        #     url: https://creativecommons.org/licenses/by-nc/4.0/
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
@@ -163,7 +163,7 @@ search:
 comment:
     type: disqus
     # Disqus shortname
-    shortname: ''
+    shortname: 'kimichen'
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -225,11 +225,11 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Your name
+        author: Kimi Chen
         # Author title
-        author_title: Your title
+        author_title: 
         # Author's current location
-        location: Your location
+        location: Shanghai, China
         # URL or path to the avatar image
         avatar: 
         # Whether show the rounded avatar image
@@ -237,21 +237,21 @@ widgets:
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
-        follow_link: https://github.com/ppoffice
+        follow_link: https://github.com/kimichen13
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: https://github.com/ppoffice
-            Facebook:
-                icon: fab fa-facebook
-                url: https://facebook.com
+                url: https://github.com/kimichen13
+            # Facebook:
+            #     icon: fab fa-facebook
+            #     url: https://facebook.com
             Twitter:
                 icon: fab fa-twitter
-                url: https://twitter.com
-            Dribbble:
-                icon: fab fa-dribbble
-                url: https://dribbble.com
+                url: https://twitter.com/KimiCuBao
+            # Dribbble:
+            #     icon: fab fa-dribbble
+            #     url: https://dribbble.com
             RSS:
                 icon: fas fa-rss
                 url: /
@@ -310,9 +310,9 @@ widgets:
         position: left
         type: adsense
         # AdSense client ID
-        client_id: ''
+        client_id: 'ca-pub-8007050323069842'
         # AdSense AD unit ID
-        slot_id: ''
+        slot_id: '5599659500'
     # Follow.it email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -370,7 +370,7 @@ plugins:
     # https://analytics.google.com
     google_analytics:
         # Google Analytics tracking ID
-        tracking_id: 
+        tracking_id: UA-131370295-1
     # Hotjar user feedback plugin
     # https://www.hotjar.com/
     hotjar:
