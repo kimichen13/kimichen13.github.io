@@ -1,6 +1,7 @@
 ---
 title: Hello World
 excerpt: This is the very first post from Hexo.
+date: 2022-02-25
 tags: common
 categories: others
 ---
