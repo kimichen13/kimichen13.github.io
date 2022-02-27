@@ -62,3 +62,4 @@ ignore: null
 theme: icarus
 deploy:
   type: ''
+toc: true

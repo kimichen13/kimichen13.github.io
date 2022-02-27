@@ -1,0 +1,18 @@
+widgets:
+    -
+      type: profile
+      position: left
+      avatar: /images/avatar.svg
+    -
+      type: toc
+      position: left
+    -
+      type: categories
+      position: left
+    -
+      type: tags
+      position: left
+
+sidebar:
+  left:
+    sticky: true
