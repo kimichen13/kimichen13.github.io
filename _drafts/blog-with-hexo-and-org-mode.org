@@ -1,0 +1,41 @@
+#+OPTIONS: toc:nil n:t
+#+begin_export html
+---
+title      : Build blog with hexo and org-mode
+excerpt    : Build blog with hexo and org-mode, use org-publish to generate md files.
+date       : <2022-02-27 Sun>
+categories : util
+tags       : [blog, org-mode, hexo]
+---
+#+end_export
+* Introduction
+  In this artical, we'll demonstrate how to use [[https://hexo.io/][Hexo]] to build the blog with [[https://ppoffice.github.io/hexo-theme-icarus/][icarus]] theme.
+
+  To be more specific, we'll share how to use [[https://orgmode.org/manual/Capture-templates.html][org-capture template]] to generate blog structure, and then use [[https://orgmode.org/manual/Publishing.html][org-publish]] to generate Github Flavored Markdown.
+* Initialization
+** Installation
+
+   First, let's create the initial blog structure.
+
+   #+begin_src bash
+npm install hexo-cli -g
+hexo init KimiSpace
+cd KimiSpace
+npm install
+hexo server
+   #+end_src
+
+   Next, install icarus theme.
+
+   #+begin_src bash
+npm install hexo-theme-icarus
+hexo config theme icarus
+   #+end_src
+
+   After install the theme, the website portal cannot be displayed normally. This [[https://github.com/ppoffice/hexo-theme-icarus/issues/855][issue]] is because of missing dependencies.
+
+   #+begin_src bash
+npm install --save bulma-stylus@0.8.0 hexo-renderer-inferno@^0.1.3
+   #+end_src
+
+   Finally, we can configure the Plugins & Widgets, and customize our personal information.
