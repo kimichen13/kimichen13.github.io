@@ -1,0 +1,127 @@
+#+OPTIONS: toc:nil n:t
+#+begin_export html
+---
+title      : Automatic build tools
+excerpt    : Automatic build tools, e.g. Ant, Maven, Gradle.
+date       : 2022-07-28
+categories : util
+tags       : [java, build]
+---
+#+end_export
+* Artifactory
+
+Artifactory is a repository manager that supports all available software package types, enabling automated continous integration and delivery.
+
+* Naming convention
+
+** G - groupId
+
+Uniquely identifies your project across all projects.
+
+** A - artifactId
+
+The name of the jar without version.
+
+** V - version
+
+* Build tools
+
+Ant, Maven, Gradle.
+
+** [[https://en.wikipedia.org/wiki/Convention_over_configuration][Convention over configuration]]
+
+** Dependency
+
+#+begin_src xml
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.3.22</version>
+</dependency>
+#+end_src
+
+#+begin_src groovy
+  implementation 'org.springframework:spring-core:5.3.22'
+  implementation group: 'org.springframework', name: 'spring-core', version: '5.3.22'
+#+end_src
+
+#+begin_src kotlin
+  implementation("org.springframework:spring-core:5.3.22")
+#+end_src
+
+** Dependency scope
+|--------+------------------------------------------------------|
+| Tool   | Scope                                                |
+|--------+------------------------------------------------------|
+| Maven  | complie(default)/provided/runtime/test/system/import |
+| Gradle | compile/runtime/testCompile/testRuntime              |
+
+** Maven phases
+
+#+begin_src xml
+<phases>
+  <phase>validate</phase>
+  <phase>initialize</phase>
+  <phase>generate-sources</phase>
+  <phase>process-sources</phase>
+  <phase>generate-resources</phase>
+  <phase>process-resources</phase>
+  <phase>compile</phase>
+  <phase>process-classes</phase>
+  <phase>generate-test-sources</phase>
+  <phase>process-test-sources</phase>
+  <phase>generate-test-resources</phase>
+  <phase>process-test-resources</phase>
+  <phase>test-compile</phase>
+  <phase>process-test-classes</phase>
+  <phase>test</phase>
+  <phase>prepare-package</phase>
+  <phase>package</phase>
+  <phase>pre-integration-test</phase>
+  <phase>integration-test</phase>
+  <phase>post-integration-test</phase>
+  <phase>verify</phase>
+  <phase>install</phase>
+  <phase>deploy</phase>
+</phases>
+#+end_src
+
+** Plugin
+
+#+begin_src xml
+<plugin>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>exec-maven-plugin</artifactId>
+  <version>1.2</version>
+  <executions>
+    <execution>
+      <id>drop DB => db_name</id>
+      <phase>pre-integration-test</phase>
+      <goals>
+        <goal>exec</goal>
+      </goals>
+      <configuration>
+        <executable>curl</executable>
+        <arguments>
+          <argument>-s</argument>
+          <argument>-S</argument>
+          <argument>-X</argument>
+          <argument>DELETE</argument>
+          <argument>http://${db.server}:${db.port}/db_name</argument>
+        </arguments>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>  
+#+end_src
+
+#+begin_src groovy
+task dropDB(type: Exec) {
+ commandLine ‘curl’,’-s’,’s’,’-x’,’DELETE’,"http://${db.server}:{db.port}/db_name"
+}
+#+end_src
+
+
+** Comparison
+
+[[https://gradle.org/maven-vs-gradle/][Maven & Gradle]]
