@@ -50,7 +50,7 @@ Ant, Maven, Gradle.
 #+end_src
 
 ** Dependency scope
-|--------+------------------------------------------------------|
+
 | Tool   | Scope                                                |
 |--------+------------------------------------------------------|
 | Maven  | complie(default)/provided/runtime/test/system/import |
