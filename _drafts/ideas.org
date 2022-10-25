@@ -1,0 +1,18 @@
+#+OPTIONS: toc:nil n:t
+#+begin_export html
+---
+title      : Ideas
+excerpt    : All kinds of ideas.
+date       : 2021-03-13
+categories : ideas
+tags       : [ideas]
+---
+#+end_export
+* Backend
+* Tools
+** Accounting
+
+ 1. Use [[https://github.com/beancount/beancount/][beancount]] and [[https://github.com/beancount/fava][fava]] to maintain ledger.
+ 2. Deploy ledger use docker.
+ 3. Use [[https://core.telegram.org/bots/api][Telegram Bot API]] to build a bot for ledger record.
+ 4. Deploy bot.
