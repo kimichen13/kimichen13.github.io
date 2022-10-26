@@ -75,14 +75,14 @@ comment:
 donates:
     -
         type: alipay
-        qrcode: ''
+        qrcode: 'https://qr.alipay.com/fkx15373carord7ustszq3f'
     -
         type: paypal
         business: kimichen13@gmail.com
         currency_code: USD
     -
         type: wechat
-        qrcode: ''
+        qrcode: 'wxp://f2f1_lz2AN8a7xPRTaYRHSZKyjsFwWp9BM8qzlKkW0M7zIT1xANZn5Z8bF-DxojB82I5'
 share:
     type: sharethis
     install_url: https://platform-api.sharethis.com/js/sharethis.js#property=6217916a33ac230019282e03&product=inline-share-buttons
