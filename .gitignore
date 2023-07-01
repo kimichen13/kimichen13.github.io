@@ -252,5 +252,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+.fleet/
+.idea/
+
 # End of https://www.toptal.com/developers/gitignore/api/hexo,node,windows,macos,emacs
 package-lock.json
+
