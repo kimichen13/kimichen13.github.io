@@ -21,7 +21,7 @@ tags       : [life, food, sushi]
 	- 文火七贯寿司 💰45
 	- 牛油果三文鱼手卷 💰36
 - Picture
-	- ![image.png](../assets/image_1689399786979_0.png)
-	- ![image.png](../assets/image_1689399821221_0.png)
-	- ![image.png](../assets/image_1689399847775_0.png)
+	- ![image.png](../images/image_1689399786979_0.png)
+	- ![image.png](../images/image_1689399821221_0.png)
+	- ![image.png](../images/image_1689399847775_0.png)
 
