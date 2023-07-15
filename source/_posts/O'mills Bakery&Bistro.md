@@ -2,12 +2,12 @@
 title      : O'mills Bakery&Bistro
 excerpt    : O'mills Bakery&Bistro
 date       : 2023-07-01
-categories : Food
-tags       : [brunch]
+categories : restaurant
+tags       : [life, food, brunch]
 ---
 
 - Address
-	- 上海市徐汇区永嘉路110号
+	- 📍上海市徐汇区永嘉路110号
 - Recommendation
 	- ⭐️⭐️⭐️
 - Commentary
